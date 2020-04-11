@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment 4 - Form</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body class="forms">
+
+        <form class="form" id="form" name="myForm" action="display.html">
+
+           
+            <!-- form body -->
+            <div class="form-body">
+                    <h2>Personal Info</h2>    
+              <!-- Firstname and Lastname -->
+               <!-- Email -->
+               <div class="form-group">
+                    <label for="fName" class="label-title">Full Name <span class="req" id="nError">*</span> </label>
+                    <input type="text" id="fName" class="form-input" placeholder="enter full name" >
+                  </div>
+
+                  <div class="horizontal-group">
+                        <div class="form-group left">
+                          <label for="address" class="label-title">Address <span class="req"id="aError">*</span></label>
+                          <input type="text" id="Address" class="form-input" placeholder="enter your address"/>
+                        </div>
+                        <div class="form-group right">
+                          <label for="city" class="label-title">City <span class="req"id="cError">*</span></label>
+                          <input type="text" id="city" class="form-input" placeholder="enter your city" />
+                        </div>
+                      </div>
+
+
+              <div class="horizontal-group">
+                <div class="form-group left">
+                  <label for="pNumber" class="label-title">Phone Number <span class="req"id="pError">*</span></label>
+                  <input type="text" id="pNumber" class="form-input" placeholder="123 456 7890" />
+                </div>
+                <div class="form-group right">
+                        <label for="email" class="label-title">Email <span class="req"id="eError">*</span></label>
+                        <input type="text" id="email" class="form-input" placeholder="example@test.com"/>
+                </div>
+              </div>
+              <h2>Vehicle Info</h2>    
+              <!-- Passwrod and confirm password -->
+              <div class="horizontal-group">
+                <div class="form-group left">
+                  <label for="vMake" class="label-title">Vehicle Make  <span class="req"id="markError">*</span></label>
+                  <input type="text" id="vMake" class="form-input" placeholder="enter vehicle make "/>
+                </div>
+                <div class="form-group right">
+                  <label for="vModel" class="label-title">Vehicle model <span class="req"id="modelError">*</span></label>
+                  <input type="text" class="form-input" id="vModel" placeholder="enter your vehicle model" />
+                </div>
+                <div class="form-group left">
+                        <label for="vYear" class="label-title">Vehicle Year   <span class="req"id="yearError">*</span></label>
+                        <input type="text" id="vYear" class="form-input" placeholder="enter vehicle make "/>
+                      </div>
+                        
+                      <div class="form-group right">
+                            <label for="vColor" class="label-title">Vehicle Color</label>
+                            <input  type="text" class="form-input test" id="vColor" id="test" placeholder="enter your vehicle Color" />
+                          </div>
+
+                              
+                      <div class="form-group right">
+                            <p id="error"></p>
+                          </div>
+
+                </div>
+              <input  style="margin-top: 30px;" class="btn"  type="submit" value="Submit">
+          </form>
+         
+    <script src="main.js"></script>
+</body>
+</html>
